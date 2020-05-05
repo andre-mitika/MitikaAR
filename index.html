@@ -7,21 +7,13 @@
 </head>
 
 <body>
-	<model-viewer id="robo" style="height: 400px;" src="assets/MitikaLogo.glb" ar
-		ar-modes="webxr scene-viewer quick-look fallback" ar-scale="auto" magic-leap camera-controls
-		alt="Um robô 3D scom expressões corporais" auto-rotate camera-controls autoplay animation-name="Running"
-		shadow-intensity="1">
+	<model-viewer	id="robo"
+					src="assets/MitikaLogo.glb"
+					alt="Um robô 3D scom expressões corporais"
+					shadow-intensity="1"
+					camera-controls
+					auto-rotate ar magic-leap>
 	</model-viewer>
-	<script>
-		(() => {
-			const modelViewer = document.querySelector('#robo');
-			
-			self.setInterval(() => {
-				modelViewer.animationName = modelViewer.animationName === 'Running' ?
-					'Wave' : 'Running';
-			}, 1500.0);
-		})();
-	</script>
 </body>
 
 </html>
